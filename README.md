@@ -19,7 +19,7 @@ $ npm run start
 $ npm run generate
 
 # test
-$ npm runtest
+$ npm run test
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
