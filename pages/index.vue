@@ -63,10 +63,16 @@ export default {
                 this.ano2 = response.data.serie;
                 this.datos = this.datos.concat(this.ano2);
 
+                /*
                 this.datos.forEach(element =>
-                  //console.log(element.fecha)
                   this.chartData.push([new Date(element.fecha), element.valor])
                 );
+                */
+                for(var i=1;i<this.datos.length;i++){
+                    //console.log(this.datos[i].valor+'/'+this.datos[i+1].valor);
+                    let valor = this.datos[i].valor - this.datos[i-1].valor;
+                    this.chartData.push([new Date(this.datos[i].fecha), valor])
+                }
 
                 //this.chartData.push(Object.values(this.datos));
 
