@@ -1,0 +1,1 @@
+export const baseUrl = 'https://mindicador.cl/api/'
